@@ -5,6 +5,7 @@ import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 import Settings from './Settings';
+import User from './User';
 import * as serviceWorker from './serviceWorker';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
@@ -30,6 +31,7 @@ const main = (
             <NavBar />
             <Route exact path="/" component={App} />
             <Route path="/settings" component={Settings} />
+            <Route path="/user" component={User} />
     </Router>
 );
 
