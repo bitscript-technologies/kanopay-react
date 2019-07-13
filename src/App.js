@@ -13,6 +13,11 @@ import {
 
 import icon from './assets/icon1.svg';
 
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react';
+Amplify.configure(awsconfig);
+
 const App = () => (
   <div>
     <Menu fixed='top' inverted>
@@ -118,4 +123,4 @@ const App = () => (
   </div>
 )
 
-export default App;
+export default withAuthenticator(App);

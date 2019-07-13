@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "captcha-create-challenge"
+    ],
+    "parentResource": "kanopay823e1ee8823e1ee8",
+    "functionName": "kanopay823e1ee8823e1ee8CreateAuthChallenge",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerTemplate": "CreateAuthChallenge.json.ejs",
+    "roleName": "kanopay823e1ee8823e1ee8CreateAuthChallenge",
+    "skipEdit": true,
+    "resourceName": "kanopay823e1ee8823e1ee8CreateAuthChallenge"
+}

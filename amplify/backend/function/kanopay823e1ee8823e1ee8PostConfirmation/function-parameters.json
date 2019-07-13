@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "add-to-group"
+    ],
+    "parentResource": "kanopay823e1ee8823e1ee8",
+    "functionName": "kanopay823e1ee8823e1ee8PostConfirmation",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerTemplate": "PostConfirmation.json.ejs",
+    "roleName": "kanopay823e1ee8823e1ee8PostConfirmation",
+    "skipEdit": true,
+    "resourceName": "kanopay823e1ee8823e1ee8PostConfirmation"
+}
