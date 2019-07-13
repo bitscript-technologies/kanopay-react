@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
-import Settings from './Settings';
 import User from './User';
 import * as serviceWorker from './serviceWorker';
 import Amplify, { Auth } from 'aws-amplify';
@@ -30,7 +29,6 @@ const main = (
     <Router>
             <NavBar />
             <Route exact path="/" component={App} />
-            <Route path="/settings" component={Settings} />
             <Route path="/user" component={User} />
     </Router>
 );

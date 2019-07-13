@@ -4,11 +4,11 @@ import {
     Header,
     Grid,
     Statistic,
-    Card,
     Segment,
     Accordion,
     Icon,
     Table,
+    Menu,
 } from 'semantic-ui-react';
 export default class User extends Component {
     state = { activeIndex: 0 }
@@ -30,17 +30,13 @@ export default class User extends Component {
                     </Container>
                     <Grid columns='equal' style={{ padding: '5em 5em' }}>
                         <Grid.Row>
-                            <Grid.Column width={10}>
+                            <Grid.Column width={12}>
                                 <Segment textAlign='center'>
                                     <Statistic>
                                         <Statistic.Label><h3>ACCOUNT BALANCE</h3></Statistic.Label>
                                         <Statistic.Value><span style={{fontSize:'35px'}}>PHP</span> 1,000.00</Statistic.Value>
                                     </Statistic>
                                 </Segment>
-                            </Grid.Column>
-                        </Grid.Row>
-                        <Grid.Row>
-                            <Grid.Column width={10}>
                                 <Table celled striped>
                                     <Table.Header>
                                     <Table.Row>
@@ -102,6 +98,13 @@ export default class User extends Component {
                                     </Table.Row>
                                     </Table.Body>
                                 </Table>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <Menu vertical fluid>
+                                    <Menu.Item link disabled>Edit Account Balance</Menu.Item>
+                                    <Menu.Item link disabled>Add/Edit Transaction Records</Menu.Item>
+                                    <Menu.Item link disabled>Delete Account</Menu.Item>
+                                </Menu>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

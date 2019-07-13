@@ -15,7 +15,7 @@ import {
 
 import icon from './assets/icon1.svg';
 
-var url = '';
+var url = 'https://3e2e7882.ngrok.io/';
 
 function App() {
   let [mobile, setMobile] = useState();
@@ -24,8 +24,8 @@ function App() {
       <Header as='h2'>Query Mobile Number</Header>
       <Form onSubmit={(x, y) => {
         console.log(mobile);
-        fetch(url, {
-          method: 'POST',
+        fetch(url+mobile, {
+          method: 'GET',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
           }
