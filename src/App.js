@@ -33,9 +33,6 @@ function App() {
       }}>
         <Input fluid action={{icon:'search'}} onChange={(x, data)=>setMobile(data.value)} placeholder='KanoPay Mobile Number' />
       </Form>
-      <p>
-        hi
-      </p>
     </Container>
   );
 }
