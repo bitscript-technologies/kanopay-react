@@ -13,7 +13,7 @@ import {
 } from 'semantic-ui-react';
 import { withAuthenticator } from 'aws-amplify-react';
 
-var url = 'http://kanopay.herokuapp.com';
+var url = 'https://kanopay.herokuapp.com/';
 
 function App() {
   let [mobile, setMobile] = useState();
