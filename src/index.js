@@ -1,36 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
-import User from './User';
 import * as serviceWorker from './serviceWorker';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
-import { withAuthenticator } from 'aws-amplify-react';
 import NavBar from './Components/NavBar';
 
-Amplify.configure(awsconfig);
-
-// const Routing = () => {
-//     return withAuthenticator(() => {
-//         return (
-//             <Router>
-//                     <NavBar />
-//                     <Route exact path="/" component={App} />
-//                     <Route path="/settings" component={Settings} />
-//             </Router>
-//         )
-//     }
-// )};
+Amplify.configure(awsconfig)
 
 const main = (
-    <Router>
-            <NavBar />
-            <Route exact path="/" component={App} />
-            <Route path="/user" component={User} />
-    </Router>
+    <React.Fragment>
+        <NavBar />
+        <App />
+    </React.Fragment>
 );
 
 ReactDOM.render(main, document.getElementById('root'));
