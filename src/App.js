@@ -9,12 +9,11 @@ import {
   Grid,
   Segment,
   Statistic,
-  Table,
-  Menu
+  Table
 } from 'semantic-ui-react';
 import { withAuthenticator } from 'aws-amplify-react';
 
-var url = 'https://kanopay.herokuapp.com/';
+var url = 'http://kanopay.herokuapp.com';
 
 function App() {
   let [mobile, setMobile] = useState();
