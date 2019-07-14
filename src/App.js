@@ -1,19 +1,10 @@
 import React, {useState} from 'react';
 import {
   Container,
-  Divider,
-  Dropdown,
-  Grid,
   Header,
-  Image,
-  List,
-  Menu,
-  Segment,
   Input,
-  Form
+  Form,
 } from 'semantic-ui-react';
-
-import icon from './assets/icon1.svg';
 
 var url = 'https://3e2e7882.ngrok.io/';
 
@@ -21,7 +12,7 @@ function App() {
   let [mobile, setMobile] = useState();
   return (
     <Container text style={{ marginTop: '7em' }}>
-      <Header as='h2'>Query Mobile Number</Header>
+      <Header as='h2'>View Account Records</Header>
       <Form onSubmit={(x, y) => {
         console.log(mobile);
         fetch(url+mobile, {

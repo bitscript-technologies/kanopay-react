@@ -17,9 +17,6 @@ function NavBar() {
                 <Image size='mini' src={icon} style={{ marginRight: '1.5em' }} />
                 <Link to='/'>KanoPay Admin Home</Link>
             </Menu.Item>
-            <Menu.Item>
-                <Link to='/settings'>Settings</Link>
-            </Menu.Item>
             </Container>
         </Menu>
     )
