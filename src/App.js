@@ -14,7 +14,7 @@ import {
 } from 'semantic-ui-react';
 import { withAuthenticator } from 'aws-amplify-react';
 
-var url = 'http://localhost:3000/';
+var url = 'https://kanopay.herokuapp.com/';
 
 function App() {
   let [mobile, setMobile] = useState();
@@ -98,13 +98,6 @@ function App() {
                                     {transactions}
                                 </Table.Body>
                             </Table>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <Menu vertical fluid>
-                                <Menu.Item link disabled>Edit Account Balance</Menu.Item>
-                                <Menu.Item link disabled>Add/Edit Transaction Records</Menu.Item>
-                                <Menu.Item link disabled>Delete Account</Menu.Item>
-                            </Menu>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
